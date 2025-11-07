@@ -17,11 +17,13 @@
 variable "project_id" {
   description = "The ID of the project where this VPC will be created"
   type        = string
+  default     = "qwiklabs-gcp-01-73f62f1c36ca"
 }
 
 variable "network_name" {
   description = "The name of the network being created"
   type        = string
+  default     = "example-vpc"
 }
 
 variable "routing_mode" {
