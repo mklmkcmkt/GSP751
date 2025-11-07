@@ -1,0 +1,34 @@
+# --- Terraform ---
+# Ignore local state files. These contain sensitive data.
+*.tfstate
+*.tfstate.backup
+
+# Ignore downloaded provider plugins and modules
+# This folder is recreated by "terraform init"
+.terraform/
+
+# Ignore plan files. These can also contain sensitive data.
+*.tfplan
+
+# Ignore crash logs
+crash.log
+*.log
+
+# Ignore variable files that might contain secrets.
+# If you have non-secret .tfvars files (e.g., "dev.tfvars")
+# that you *want* to commit, you can force-add them.
+# But as a rule, ignore them all.
+*.tfvars
+*.tfvars.json
+*.auto.tfvars
+*.auto.tfvars.json
+
+# --- Common OS/Editor Junk ---
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore common editor config/state
+.vscode/
+.idea/
+*.swp
